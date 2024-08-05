@@ -8,8 +8,9 @@
   <link rel="icon" href="/favicon.ico" type="image/ico" />
   <link rel="stylesheet" type="text/css" href=
   "/style-v2/section-development.css" />
-  <!--[if IE 7]> <style type="text/css"> body { behavior: url(/style-v2/csshover3.htc); } </style> 
+  <!--[if IE 7]> <style type="text/css"> body { behavior: url(/style-v2/csshover3.htc); } </style>
   <![endif]-->
+<script defer data-domain="original.boost.org" src="https://plausible.io/js/script.js"></script>
 </head><!--
 Note: Editing website content is documented at:
 https://www.boost.org/development/website_updating.html
@@ -40,7 +41,7 @@ https://www.boost.org/development/website_updating.html
               <p>To run a library's regression tests, run Boost's
               <a href="/build/">b2</a> utility from the
               <tt><i>&lt;boost-root&gt;</i>/libs/<em>&lt;library&gt;</em>/test</tt> directory. To run a
-              single test, specify its name (as found in 
+              single test, specify its name (as found in
               <tt><i>&lt;boost-root&gt;</i>/libs/<em>&lt;library&gt;</em>/test/Jamfile.v2</tt>) on the
               command line.</p>
 
@@ -86,13 +87,13 @@ https://www.boost.org/development/website_updating.html
                 <li>Download the <a href=
                 "https://raw.githubusercontent.com/boostorg/regression/develop/testing/src/run.py">
                 run.py</a> script into that directory:</li>
-                
+
                 <blockquote>
-                
+
                 <ol>
                   <li>Open <a href="https://raw.githubusercontent.com/boostorg/regression/develop/testing/src/run.py">
                   run.py</a> script in your browser.</li>
-                  <li>Click the <strong><em>Raw</em></strong> button.</li> 
+                  <li>Click the <strong><em>Raw</em></strong> button.</li>
                   <li>Save as <tt>run.py</tt> in the directory you just created.</li>
                 </ol>
 
@@ -110,18 +111,18 @@ https://www.boost.org/development/website_updating.html
 
                     <li><tt>--toolsets=</tt> - The toolset(s) you want to test
                     with <sup><a href="#toolsets">3</a></sup>.</li>
-                    
+
                     <li><tt>--tag=</tt> - The tag (i.e. branch) you want to test.
                     The only tags that currently make sense are
                     <tt>develop</tt> and <tt>master</tt>.</li>
-                                        
+
                   </ul>
 
                   <p>For example:</p><tt>python run.py --runner=Metacomm
                   --toolsets=gcc-4.2.1,msvc-8.0 --tag=develop</tt>
                 </li>
               </ol>
-              
+
               <p><strong>Note</strong>: If you are behind a firewall/proxy
               server, everything should still "just work". In the rare cases
               when it doesn't, you can explicitly specify the proxy server
@@ -151,7 +152,7 @@ Options:
                         bootstrap toolset for 'bjam' executable
   --pjl-toolset=PJL_TOOLSET
                         bootstrap toolset for 'process_jam_log' executable
-  --platform=PLATFORM   
+  --platform=PLATFORM
   --user=USER           Boost SVN user ID
   --local=LOCAL         the name of the boost tarball
   --force-update        do an SVN update (if applicable) instead of a clean

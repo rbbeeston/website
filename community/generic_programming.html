@@ -16,6 +16,7 @@
   strong.c1 {font-style: italic}
   /*]]>*/
   </style>
+<script defer data-domain="original.boost.org" src="https://plausible.io/js/script.js"></script>
 </head><!--
 Note: Editing website content is documented at:
 https://www.boost.org/development/website_updating.html
@@ -143,7 +144,7 @@ int main()
   region2.push_back(1);
   region2.push_back(0);
   region2.push_back(3);
-  
+
   std::copy(region2.begin(), region2.end(), region1.begin());
 
   for (int i = 0; i &lt; N; ++i)
@@ -296,7 +297,7 @@ namespace std {
     }
 
     template &lt;class BidirectionalIterator, class Distance&gt;
-    void advance_dispatch(BidirectionalIterator&amp; i, Distance n, 
+    void advance_dispatch(BidirectionalIterator&amp; i, Distance n,
        <strong>bidirectional_iterator_tag</strong>) {
       if (n &gt;= 0)
         while (n--) ++i;
@@ -305,7 +306,7 @@ namespace std {
     }
 
     template &lt;class RandomAccessIterator, class Distance&gt;
-    void advance_dispatch(RandomAccessIterator&amp; i, Distance n, 
+    void advance_dispatch(RandomAccessIterator&amp; i, Distance n,
        <strong>random_access_iterator_tag</strong>) {
       i += n;
     }
@@ -359,7 +360,7 @@ namespace std {
               specialization of <code>iterator_adaptor</code> itself and
               generators were a convenient way to produce those types.</p>
               <pre>
-template &lt;class Predicate, class Iterator, 
+template &lt;class Predicate, class Iterator,
     class Value = <i>complicated default</i>,
     class Reference = <i>complicated default</i>,
     class Pointer = <i>complicated default</i>,
@@ -368,7 +369,7 @@ template &lt;class Predicate, class Iterator,
          &gt;
 struct filter_iterator_generator {
     typedef iterator_adaptor&lt;
-        
+
         Iterator,filter_iterator_policies&lt;Predicate,Iterator&gt;,
         Value,Reference,Pointer,Category,Distance&gt; <strong>type</strong>;
 };

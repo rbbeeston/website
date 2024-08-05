@@ -20,7 +20,7 @@ require_once(dirname(__FILE__) . '/../common/code/bootstrap.php');
 
 function add_spirit_analytics($content) {
     $server = $_SERVER['HTTP_HOST'];
-    
+
     if ($server != 'www.boost.org' && $server != 'live.boost.org')
         return $content;
 
