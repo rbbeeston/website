@@ -29,8 +29,7 @@ $test_text_expected = <<<EOL
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Hello_world_test.txt</title><script defer data-domain="original.boost.org" src="https://plausible.io/js/script.js"></script>
-</head>
+<title>Hello_world_test.txt</title></head>
 <body>
 <h3>Hello_world_test.txt</h3>
 <pre>
@@ -57,8 +56,7 @@ $test_text_expected = <<<EOL
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Hello_world_test.txt</title><script defer data-domain="original.boost.org" src="https://plausible.io/js/script.js"></script>
-</head>
+<title>Hello_world_test.txt</title></head>
 <body>
 <h3>Hello_world_test.txt</h3>
 <pre>
@@ -96,8 +94,7 @@ if (version_compare(PHP_VERSION, '5.4.0') < 0) {
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Hello_world_test.txt</title><script defer data-domain="original.boost.org" src="https://plausible.io/js/script.js"></script>
-</head>
+<title>Hello_world_test.txt</title></head>
 <body>
 <h3>Hello_world_test.txt</h3>
 <pre>
@@ -114,8 +111,7 @@ EOL;
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Hello_world_test.txt</title><script defer data-domain="original.boost.org" src="https://plausible.io/js/script.js"></script>
-</head>
+<title>Hello_world_test.txt</title></head>
 <body>
 <h3>Hello_world_test.txt</h3>
 <pre>
@@ -145,8 +141,7 @@ $test_cpp_expected = <<<EOL
 <head>
 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>foo/test.cpp</title><script defer data-domain="original.boost.org" src="https://plausible.io/js/script.js"></script>
-</head>
+<title>foo/test.cpp</title></head>
 <body>
 <h3>foo/test.cpp</h3>
 <pre>
@@ -186,7 +181,6 @@ $test_simple_expected = <<<EOL
 <html>
 <head>
 <title>Test Document</title>
-<script defer data-domain="original.boost.org" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
 <h1>Simple test case for the filters</h1>
